@@ -1,0 +1,8 @@
+{
+  "text1": {
+    "componentName": "text",
+    "label": "Name",
+    "required": "true",
+    "alphaOnly": "true"
+  }
+}

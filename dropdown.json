@@ -1,0 +1,15 @@
+{
+  "drop1": {
+    "componentName": "dropdown",
+    "label": "Gender",
+    "required": "true",
+    "item1": {
+      "label": "Male",
+      "value": "male"
+    },
+    "item2": {
+      "label": "Female",
+      "value": "female"
+    }
+  }
+}
