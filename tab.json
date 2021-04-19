@@ -9,8 +9,8 @@
 			},
 			{
 				"componentName": "text",
-				"text": "<p>Another Text Component From API in Tab 1</p>",
-				"textIsRich": "true"
+				"text": "Another Text Component From API in Tab 1",
+				"textIsRich": "false"
 			}]
 		},
 		"Tab Name 2": {
