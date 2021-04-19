@@ -1,0 +1,29 @@
+{
+	"tab1": {
+		"componentName": "tab"
+		"Tab Name 1": {
+			"components": [{
+				"componentName": "text",
+				"text": "<p>Text Component From API in Tab 1</p>",
+				"textIsRich": "true"
+			},
+			{
+				"componentName": "text",
+				"text": "<p>Another Text Component From API in Tab 1</p>",
+				"textIsRich": "true"
+			}]
+		},
+		"Tab Name 2": {
+			"components": [{
+				"componentName": "text",
+				"text": "<p>Text Component From API in Tab 2</p>",
+				"textIsRich": "true"
+			},
+			{
+				"componentName": "text",
+				"text": "<p>Another Text Component From API in Tab 2</p>",
+				"textIsRich": "true"
+			}]
+		}
+	}
+}
