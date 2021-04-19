@@ -1,6 +1,6 @@
 {
 	"tab1": {
-		"componentName": "tab"
+		"componentName": "tab",
 		"Tab Name 1": {
 			"components": [{
 				"componentName": "text",
