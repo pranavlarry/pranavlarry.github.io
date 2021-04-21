@@ -16,13 +16,13 @@
 				},
 				{
 					"componentName": "image",
-					"fileReference": "/content/dam/q8-contest-0321/template/rakuten.png",
+					"fileReference": "/content/dam/q8-contest-0321/template/rakuten.png"
 				},
 				{
 					"componentName": "button",
 					"jcr:title": "Test Title",
 					"link": "/content/kuwaitpetroleumitaliaspa/it",
-					"isNewTab": "true":
+					"isNewTab": "true"
 				}
 			]
 		},
