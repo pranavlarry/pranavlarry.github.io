@@ -5,7 +5,7 @@
 			"components": [
 				{
 					"componentName": "title",
-					"/jcr:title": "Test Title",
+					"jcr:title": "Test Title",
 					"type": "h1"
 				
 				},
@@ -20,22 +20,9 @@
 				},
 				{
 					"componentName": "button",
-					"/jcr:title": "Test Title",
+					"jcr:title": "Test Title",
 					"link": "/content/kuwaitpetroleumitaliaspa/it",
 					"isNewTab": "true"
-				}
-			]
-		},
-		"Tab Name 2": {
-			"components": [
-				{
-					"componentName": "text",
-					"text": "<p>Text Component From API in Tab 2</p>",
-					"textIsRich": "true"
-				},
-				{
-					"componentName": "filler",
-					"padding": "20"
 				}
 			]
 		}
