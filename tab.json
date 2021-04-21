@@ -2,7 +2,13 @@
 	"tab1": {
 		"componentName": "tab",
 		"Tab Name 1": {
-			"components": []
+			"components": [
+			{
+				"componentName": "title",
+				"jcr:title": "Test Title",
+				"type": "h1"
+				
+			}]
 		}
 	}
 }
