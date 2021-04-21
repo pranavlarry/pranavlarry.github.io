@@ -2,28 +2,47 @@
 	"tab1": {
 		"componentName": "tab",
 		"Tab Name 1": {
-			"components": [{
-				"componentName": "text",
-				"text": "<p>Text Component From API in Tab 1</p>",
-				"textIsRich": "true"
-			},
-			{
-				"componentName": "text",
-				"text": "<p>Another Text Component From API in Tab 1</p>",
-				"textIsRich": "true"
-			}]
+			"components": [
+				{
+					"componentName": "title",
+					"jcr:title": "Test Title",
+					"type": "h1"
+				
+				},
+				{
+					"componentName": "text",
+					"text": "<p>Text Component From API in Tab 1</p>",
+					"textIsRich": "true"
+				},
+				{
+					"componentName": "image",
+					"fileReference": "/content/dam/q8-contest-0321/template/rakuten.png",
+				},
+				{
+					"componentName": "button",
+					"jcr:title": "Test Title",
+					"link": "/content/kuwaitpetroleumitaliaspa/it",
+					"isNewTab": "true":
+				}
+			]
 		},
 		"Tab Name 2": {
-			"components": [{
-				"componentName": "text",
-				"text": "<p>Text Component From API in Tab 2</p>",
-				"textIsRich": "true"
-			},
-			{
-				"componentName": "text",
-				"text": "<p>Another Text Component From API in Tab 2</p>",
-				"textIsRich": "true"
-			}]
+			"components": [
+				{
+					"componentName": "text",
+					"text": "<p>Text Component From API in Tab 2</p>",
+					"textIsRich": "true"
+				},
+				{
+					"componentName": "filler",
+					"padding": 20
+				},
+				{
+					"componentName": "text",
+					"text": "<p>Another Text Component From API in Tab 2</p>",
+					"textIsRich": "true"
+				}
+			]
 		}
 	}
 }
