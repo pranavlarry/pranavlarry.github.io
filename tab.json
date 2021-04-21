@@ -8,7 +8,13 @@
 				"jcr:title": "Test Title",
 				"type": "h1"
 				
-			}]
+			},
+			{
+				"componentName": "text",
+				"text": "<p>Text Component From API in Tab 1</p>",
+				"textIsRich": "true"
+			}
+			]
 		}
 	}
 }
