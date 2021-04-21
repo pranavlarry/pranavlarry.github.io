@@ -36,28 +36,7 @@
 				{
 					"componentName": "filler",
 					"padding": "20"
-				},
-				{
-					"componentName": "list",
-					"showDescription": "true",
-					"showImg": "false",
-					"enableCta": "true",
-					"isNewtab": "false",
-					"item0": {
-					  "title": "App Club Q8",
-					  "subtitle": "Test subtitle",
-					  "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-					  "itemLink": "/content/kuwaitpetroleumitaliaspa/it/app-club-q8",
-					  "imgLink": "/content/dam/kuwaitpetroleumitaliaspa/750x348_Catologo.jpg"
-					},
-					"item1": {
-					  "title": "Catalogo",
-					  "subtitle": "Test subtitle",
-					  "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-					  "itemLink": "/content/kuwaitpetroleumitaliaspa/it/catalogo",
-					  "imgLink": "/content/dam/kuwaitpetroleumitaliaspa/750x348_AppClubQ8.jpg"
-					}
-			    }
+				}
 			]
 		}
 	}
