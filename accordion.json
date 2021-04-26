@@ -1,7 +1,7 @@
 {
-  "tab1": {
-    "componentName": "tab",
-    "Tab Name 1": {
+  "acc1": {
+    "componentName": "accordion",
+    "Item Name 1": {
       "components": [
         {
           "componentName": "title",
@@ -25,7 +25,7 @@
         }
       ]
     },
-    "Tab Name 2": {
+    "Item Name 2": {
       "components": [
         {
           "componentName": "text",
