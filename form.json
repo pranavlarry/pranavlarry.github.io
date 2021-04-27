@@ -1,0 +1,40 @@
+{
+	"form1": {
+		"url": "https://httpbin.org/post",
+		"thanksMsg": "<h1>Thank You</h1>",
+		"layout": "align-one",
+		"components": [
+			{
+				"componentName": "text",
+				"label": "Name",
+				"required": "true",
+				"alphaOnly": "true"
+			},
+			{
+				"componentName": "textarea",
+				"label": "Description",
+				"required": "true",
+				"alphaNum": "true"
+			},
+			{
+				"componentName": "dropdown",
+				"label": "Gender",
+				"required": "true",
+				"item1": {
+				  "label": "Male",
+				  "value": "male"
+				},
+				"item2": {
+				  "label": "Female",
+				  "value": "female"
+				}
+			},
+			{
+				"componentName": "checkbox",
+				"label": "Married",
+				"value": "true",
+				"defaultChecked": "true"
+			}
+		]
+	}
+}
