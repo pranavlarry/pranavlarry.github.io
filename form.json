@@ -3,6 +3,7 @@
 		"url": "https://httpbin.org/post",
 		"thanksMsg": "<h1>Thank You</h1>",
 		"layout": "align-one",
+		"componentName": "form"
 		"components": [
 			{
 				"componentName": "text",
