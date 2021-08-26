@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="public/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NR Checkout</title>
+</head>
+<body>
+    <!--Header start-->
+    <nav class="navbar-fixed nav" style="position: fixed">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo nav-logo">
+              <!-- <img src="assets/header/nr-logo.png" width="270px" height="35px" alt="logo"> -->
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right">
+            <li><a href="#"><i class="material-icons">search</i></a></li>
+            <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">location_on</i></a></li>
+            <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">account_circle</i></a></li>
+            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">SALES</a></li>
+            <li><a href="badges.html">TOVINO COLLECTION</a></li>
+            <li><a href="collapsible.html">TOP WEAR</a></li>
+            <li><a href="collapsible.html">BOTTOM WEAR</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <!-- <li>
+
+        </li> -->
+        <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-custom">
+                <li class="tab col s3"><a class="active" href="#menu">Menu</a></li>
+                <li class="tab col s3"><a href="#account">Account</a></li>
+              </ul>
+            </div>
+            <div id="menu" class="col s12">
+                <li><a href="sass.html">SALES</a></li>
+                <li><a href="badges.html">TOVINO COLLECTION</a></li>
+                <li><a href="collapsible.html">TOP WEAR</a></li>
+                <li><a href="collapsible.html">BOTTOM WEAR</a></li>
+            </div>
+            <div id="account" class="col s12">
+                <li><a href="#">Sign In</a></li>
+            </div>
+        </div>
+    </ul>
+    <div class="filler"></div>
+    <!--Header end-->
+    <nav class="checkoutnav">
+        <div class="checkoutnav-wrapper">
+            <a href="#!" class="checkoutnav-item active">Shipping</a>
+            <a href="#!" class="checkoutnav-item">Review & Payment</a>
+        </div>
+    </nav>
+    <div class="checkout-container">
+        <ul class="collapsible order">
+            <li>
+            <div class="collapsible-header order-summary">
+                <h6>Order Summary</h6>
+                <h6>Rs. 2500</h6>
+            </div>
+            <div class="collapsible-body order-body">
+                    <div class="order-edit">
+                        <button class="nr-btn">Edit</button>
+                    </div>
+                    <ul>
+                        <li class="order-item">
+                            <div class="order-details">
+                                <div class="order-container">
+                                    <img src="assets/product/0003.jpg" width="65px" height="80px" alt="">
+                                    <div>
+                                        <p><b>Product Title</b></p>
+                                        <p class="small">Size: L</p>
+                                        <p class="small">Color: Black</p>
+                                        <p class="small">Qty: 2</p>
+                                    </div>
+                                </div>
+                                <p><b>Rs. 2500</b></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="order-disContainer">
+                        <input type="text" name="discount" id="discount" placeholder="Gift card or discount code">
+                        <button class="nr-btn">Check</button>
+                    </div>
+                    <div class="order-total">
+                        <p><b>Current Total:</b></p>
+                        <p><b>Rs. 2500</b></p>
+                    </div>
+            </div>
+            </li>
+        </ul>
+
+        <form action="#" class="address">
+            <div>
+                <p>Name:</p>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <p>Address:</p>
+                <label for="street-addr">Street Address:</label>
+                <input type="text" name="street-addr" id="street-addr">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="">Please select a region, state or province.</option>
+                    <option data-title="Andaman and Nicobar Islands" value="533">Andaman and Nicobar Islands</option>
+                    <option data-title="Andhra Pradesh" value="534">Andhra Pradesh</option>
+                    <option data-title="Arunachal Pradesh" value="535">Arunachal Pradesh</option>
+                    <option data-title="Assam" value="536">Assam</option>
+                    <option data-title="Bihar" value="537">Bihar</option>
+                    <option data-title="Chandigarh" value="538">Chandigarh</option>
+                    <option data-title="Chhattisgarh" value="539">Chhattisgarh</option>
+                    <option data-title="Dadra and Nagar Haveli" value="540">Dadra and Nagar Haveli</option>
+                    <option data-title="Daman and Diu" value="541">Daman and Diu</option>
+                    <option data-title="Delhi" value="542">Delhi</option>
+                    <option data-title="Goa" value="543">Goa</option>
+                    <option data-title="Gujarat" value="544">Gujarat</option>
+                    <option data-title="Haryana" value="545">Haryana</option>
+                    <option data-title="Himachal Pradesh" value="546">Himachal Pradesh</option>
+                    <option data-title="Jammu and Kashmir" value="547">Jammu and Kashmir</option>
+                    <option data-title="Jharkhand" value="548">Jharkhand</option>
+                    <option data-title="Karnataka" value="549">Karnataka</option>
+                    <option data-title="Kerala" value="550">Kerala</option>
+                    <option data-title="Lakshadweep" value="551">Lakshadweep</option>
+                    <option data-title="Madhya Pradesh" value="552">Madhya Pradesh</option>
+                    <option data-title="Maharashtra" value="553">Maharashtra</option>
+                    <option data-title="Manipur" value="554">Manipur</option>
+                    <option data-title="Meghalaya" value="555">Meghalaya</option>
+                    <option data-title="Mizoram" value="556">Mizoram</option>
+                    <option data-title="Nagaland" value="557">Nagaland</option>
+                    <option data-title="Odisha" value="558">Odisha</option>
+                    <option data-title="Puducherry" value="559">Puducherry</option>
+                    <option data-title="Punjab" value="560">Punjab</option>
+                    <option data-title="Rajasthan" value="561">Rajasthan</option>
+                    <option data-title="Sikkim" value="562">Sikkim</option>
+                    <option data-title="Tamil Nadu" value="563">Tamil Nadu</option>
+                    <option data-title="Telangana" value="564">Telangana</option>
+                    <option data-title="Tripura" value="565">Tripura</option>
+                    <option data-title="Uttar Pradesh" value="566">Uttar Pradesh</option>
+                    <option data-title="Uttarakhand" value="567">Uttarakhand</option>
+                    <option data-title="West Bengal" value="568">West Bengal</option>
+                </select>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="india">India</option>
+                </select>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone">
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <span>Save for future orders</span>
+                </label>
+            </div>
+            <button class="nr-btn">Continue Shopping</button>
+            <button class="nr-btn" type="submit">Continue</button>
+        </form>
+            <!--Footer-->
+    <footer class="footer">
+        <div class="footer-guarantee row">
+            <div class="col s12 m6 l3 center-align">
+                <i class="footer-guarantee-icon shipping"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SHIPPING & RETURN</h4>
+                    <p>Free shipping option available.</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="footer-guarantee-icon return"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>RETURNS</h4>
+                    <p>Returns accepted for non mask products</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="footer-guarantee-icon payment"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SECURE PAYMENT</h4>
+                    <p>All major credit cards, wallet and internet banking is accepted.</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="footer-guarantee-icon support"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SUPPORT</h4>
+                    <p><b>Call us: 18001 2100 1001</b> <br>
+                        Monday to Saturday (10 am to 6 pm) <br>
+                        Email us: support@northrepublic.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><h6 class="white-heading">NORTH REPUBLIC</h6>
+                    <i class="small material-icons">arrow_drop_down</i></div>
+                  <div class="collapsible-body">
+                      <ul>
+                          <li><a href="#">About Us</a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><h6 class="white-heading">SHOP</h6>
+                    <i class="small material-icons">arrow_drop_down</i></div>
+                  <div class="collapsible-body">
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Denims</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Mask</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><h6 class="white-heading">ACTIVITY</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Find Stores</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><h6 class="white-heading">POLICIES</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cancellation</a></li>
+                            <li><a href="https://www.northrepublic.com/return-policy/">Return and Exchanges</a></li>
+                            <li><a href="https://www.northrepublic.com/refund-policy/">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+        <div class="footer-payments">
+            <div class="footer-container row">
+                <img src="assets/icons/visa.svg" width="70px" height="50px" alt="visa" class="col s2">
+                <img src="assets/icons/master.svg" width="70px" height="50px" alt="master-card" class="col s2">
+                <img src="assets/icons/rupay.svg" width="70px" height="50px" alt="rupay" class="col s2">
+                <img src="assets/icons/google-pay.svg" width="70px" height="50px" alt="google-pay" class="col s2">
+                <img src="assets/icons/phonepe.svg" width="70px" height="50px" alt="phone-pe" class="col s2">
+                <img src="assets/icons/bhim.svg" width="70px" height="50px" alt="bhim" class="col s2">
+
+            </div>
+        </div>
+        <div class="footer-copy center-align">
+            <p class="text-small">©Copyright 2020 - North Republic, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!--End of footer-->
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="public/js/all.js"></script>
+</body>
+</html>
