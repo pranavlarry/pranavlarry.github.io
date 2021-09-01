@@ -34,21 +34,152 @@
             </li>
             <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">location_on</i></a></li>
             <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">account_circle</i></a></li>
-            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+            <li>
+                  <a href="#" data-target="slide-out-cart" style="display: block;" class="cart-trigger sidenav-trigger"><i class="material-icons">shopping_cart</i></a>
+            </li>
           </ul>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="right hide-on-med-and-down menu">
             <li><a href="sass.html">SALES</a></li>
             <li><a href="badges.html">TOVINO COLLECTION</a></li>
-            <li><a href="collapsible.html">TOP WEAR</a></li>
-            <li><a href="collapsible.html">BOTTOM WEAR</a></li>
+            <li>
+                <a href="#!" class="mega-trigger" data-target="#top_wear">
+                    TOP WEAR<i class="material-icons right">arrow_drop_down</i>
+                    <div class="mega" id="top_wear">
+                        <div class="mega-menu">
+                            <h5>TOP WEAR</h5>
+                            <ul  class="mega-items">
+                                <li>
+                                    <p class="mega-maincat"><a href="#"><b>Shirts</b></a></p>
+                                    <ul class="mega-subcat">
+                                        <li><a href="#">Solids</a></li>
+                                        <li><a href="#">CHECKERED</a></li>
+                                        <li><a href="#">FLORAL</a></li>
+                                        <li><a href="#">MODERN</a></li>
+                                        <li><a href="#">STRIPES</a></li>
+                                        <li><a href="#">999 Collections</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>T-Shirts</b></a></p>
+                                    <ul  class="mega-subcat">
+                                        <li><a href="#">Graphic Tees</a></li>
+                                        <li><a href="#">Combo Packs</a></li>
+                                        <li><a href="#">Polos @ 399</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="mega-related">
+                                <p class="mega-related-heading"><b>You May Also Like:</b></p>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="mega-trigger" href="#!" data-target="#bottom_wear">
+                    BOTTOM WEAR<i class="material-icons right">arrow_drop_down</i>
+                    <div class="mega" id="bottom_wear">
+                        <div class="mega-menu">
+                            <h5>BOTTOM WEAR</h5>
+                            <ul  class="mega-items">
+                                <li>
+                                    <p class="mega-maincat"><a href="#"><b>TROUSERS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>JEANS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>SHORTS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>BOXERS</b></a></p>
+                                </li>
+                            </ul>
+                            <div class="mega-related">
+                                <p class="mega-related-heading"><b>You May Also Like:</b></p>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="/assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
           </ul>
         </div>
     </nav>
-    
-    <ul class="sidenav" id="mobile-demo">
-        <!-- <li>
-
-        </li> -->
+    <!-- Side navbars -->
+    <div id="slide-out-cart" class="sidenav cart">
+        <div>
+            <h4 class="center-align">Your Cart</h4>
+            <ul class="cart-items">
+                <li class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/product/1.jpeg" alt="Product" width="65px">
+                    </div>
+                    <div>
+                        <p>Product Title</p>
+                        <p class="small">Size: XL</p>
+                        <div class="product-qty">
+                            <button class="product-qtychange product-qtyminus">-</button>
+                            <input class="product-qtyno" type="number" name="qty" id="qty" value="1" min="1" max="10">
+                            <button class="product-qtychange product-qtyplus">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Rs. 1000</p>
+                        <p class="cart-del small center-align"><i class="material-icons small">delete</i></p>
+                    </div>
+                </li>
+                <li class="cart-item">
+                    <div class="cart-img">
+                        <img src="assets/product/2.jpeg" alt="Product" width="65px">
+                    </div>
+                    <div>
+                        <p>Product Title</p>
+                        <p class="small">Size: XL</p>
+                        <div class="product-qty">
+                            <button class="product-qtychange product-qtyminus">-</button>
+                            <input class="product-qtyno" type="number" name="qty" id="qty" value="1" min="1" max="10">
+                            <button class="product-qtychange product-qtyplus">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Rs. 1000</p>
+                        <p class="cart-del small center-align"><i class="material-icons small">delete</i></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="cart-checkout">
+            <div class="cart-total"><span>Total: </span><span>Rs 2000</span></div>
+            <button class="nr-btn">Checkout</button>
+        </div>
+    </div>
+    <ul class="sidenav menu" id="mobile-demo">
         <div class="row">
             <div class="col s12">
               <ul class="tabs tabs-custom">
@@ -57,10 +188,78 @@
               </ul>
             </div>
             <div id="menu" class="col s12">
-                <li><a href="sass.html">SALES</a></li>
-                <li><a href="badges.html">TOVINO COLLECTION</a></li>
-                <li><a href="collapsible.html">TOP WEAR</a></li>
-                <li><a href="collapsible.html">BOTTOM WEAR</a></li>
+                <ul class="collapsible">
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">SALES
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#">Flat 40% Discount</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">TOVINO COLLECTION
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Illusion Shirts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">TOP WEAR
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                        <ul class="collapsible">
+                            <li class="collapsible-item">
+                                <div class="collapsible-header">Shirts
+                                    <i class="small material-icons">arrow_drop_down</i>
+                                  </div>
+                                  <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="#">SOLIDS</a></li>
+                                            <li><a href="#">CHECKERED</a></li>
+                                            <li><a href="#">FLORAL</a></li>
+                                            <li><a href="#">MODERN</a></li>
+                                            <li><a href="#">STRIPES</a></li>
+                                            <li><a href="#">999 COLLECTION</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li class="collapsible-item">
+                                <div class="collapsible-header">T-Shirts
+                                    <i class="small material-icons">arrow_drop_down</i>
+                                  </div>
+                                  <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="#">GRAPHIC TEES</a></li>
+                                            <li><a href="#">COMBO PACKS</a></li>
+                                            <li><a href="#">POLOS @ 399</a></li>
+                                            <li><a href="#">POLOS</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="collapsible-item">
+                        <div class="collapsible-header">BOTTOM WEAR
+                            <i class="small material-icons">arrow_drop_down</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">TROUSERS</a></li>
+                                <li><a href="#">JEANS</a></li>
+                                <li><a href="#">SHORTS</a></li>
+                                <li><a href="#">BOXERS</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
             </div>
             <div id="account" class="col s12">
                 <li><a href="#">Sign In</a></li>
@@ -71,13 +270,6 @@
     <!--Header end-->
 
     <!--flasher-->
-    <!-- <div class="flash">
-        <ul class="flash-container">
-            <li class="flash-item">Lorem 1 Ipsum is simply dummy text of the printing and typesetting industry.</li>
-            <li class="flash-item">Lorem 2 Ipsum is simply dummy text of the printing and typesetting industry.</li>
-            <li class="flash-item">Lorem 3 Ipsum is simply dummy text of the printing and typesetting industry.</li>
-        </ul>
-    </div> -->
     <div class="owl-carousel owl-theme flash">
         <div class="item"><h6 class="center-align">Easy Returns</h6></div>
         <div class="item"><h6 class="center-align">Best In Class Collections</h6></div>
@@ -86,16 +278,16 @@
     <!--flasher end-->
     
     <!--banner-->
-    <div class="banner">
+    <div class="banner fade-scaleIn-banner">
         <picture>
-            <source media="(min-width:768px)" srcset="assets/banner/banner-desk.jpg">
-            <img class="banner-img" src="assets/banner/banner-mob.jpg" alt="Banner">
+            <source media="(min-width:768px)" srcset="assets/banner/banner-desk-1.jpg">
+            <img class="banner-img" src="assets/banner/banner-mob-1.jpg" alt="Banner">
           </picture>
     </div>
-    <div class="banner">
+    <div class="banner fade-scaleIn-banner">
         <picture>
-            <source media="(min-width:768px)" srcset="assets/banner/banner-desk.jpg">
-            <img class="banner-img" src="assets/banner/banner-mob.jpg" alt="Banner">
+            <source media="(min-width:768px)" srcset="assets/banner/banner-desk-2.png">
+            <img class="banner-img" src="assets/banner/banner-mob-2.png" alt="Banner">
           </picture>
     </div>
     <!--banner end-->
@@ -104,29 +296,29 @@
     <div class="heading center-hr">
         <h4>BIGGEST COLLECTION</h4>
     </div>
-    <div class="slide owl-carousel owl-theme">
+    <div class="slide nr-slider owl-carousel owl-theme">
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
-            <h4 class="slide-title">WHITE SHIRTS</h4>
+            <img src="assets/product/1.jpeg" alt="catagory" class="slide-img">
+            <h4 class="slide-title">Solids</h4>
         </a>
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
-            <h4 class="slide-title">WHITE SHIRTS</h4>
+            <img src="assets/product/2.jpeg" alt="catagory" class="slide-img">
+            <h4 class="slide-title">Checkered</h4>
         </a>
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
-            <h4 class="slide-title">WHITE SHIRTS</h4>
+            <img src="assets/product/3.jpeg" alt="catagory" class="slide-img">
+            <h4 class="slide-title">Floral SHIRTS</h4>
         </a>
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
-            <h4 class="slide-title">WHITE SHIRTS</h4>
+            <img src="assets/product/3.jpeg" alt="catagory" class="slide-img">
+            <h4 class="slide-title">Modern SHIRTS</h4>
         </a>
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
-            <h4 class="slide-title">WHITE SHIRTS</h4>
+            <img src="assets/product/2.jpeg" alt="catagory" class="slide-img">
+            <h4 class="slide-title">Stripes SHIRTS</h4>
         </a>
         <a class="slide-item item" href="#">
-            <img src="assets/slider/0002.jpg" alt="catagory" class="slide-img">
+            <img src="assets/product/1.jpeg" alt="catagory" class="slide-img">
             <h4 class="slide-title">WHITE SHIRTS</h4>
         </a>
     </div>
@@ -140,78 +332,78 @@
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/1.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title price">Rs 699</span>
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/2.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title">Rs 699</span>
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/3.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title">Rs 699</span>
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/1.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title">Rs 699</span>
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/2.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
                     <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title">Rs 699</span>
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
             <div class="col s6 m4 l3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                        <img src="assets/product/3.jpeg">
                         <a class="card-eye"><i
                                 class="material-icons">remove_red_eye</i></a>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title">Product Title</span>
-                        <span class="card-title">Rs 699</span>
+                    <div class="product-info">
+                        <span class="product-title">Product Title</span>
+                        <span class="product-price">Rs 699</span>
                     </div>
                 </div>
             </div>
@@ -225,13 +417,105 @@
 
     <!-- End of Product Catalog-->
     <!--banner-->
-    <div class="banner">
+    <div class="banner fade-scaleIn-banner">
         <picture>
-            <source media="(min-width:768px)" srcset="assets/banner/banner-desk.jpg">
-            <img class="banner-img" src="assets/banner/banner-mob.jpg" alt="Banner">
+            <source media="(min-width:768px)" srcset="assets/banner/banner-desk-3.png">
+            <img class="banner-img" src="assets/banner/banner-mob-3.png" alt="Banner">
         </picture>
     </div>
     <!--banner-->
+
+    <!--Product category slider-->
+    <div class="heading center-hr">
+        <h4>BEST SELLER</h4>
+     </div>
+     <div class="catalog__container catalog__container-slider" id="catalog">
+         <div class="row catalog__container-row">
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/1.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/2.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/3.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/1.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/2.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-item col m4 l3">
+                 <div class="card">
+                     <div class="card-image">
+                         <img src="assets/product/3.jpeg">
+                         <a class="card-eye"><i
+                                 class="material-icons">remove_red_eye</i></a>
+                     </div>
+                     <div class="card-content">
+                         <span class="product-title">Product Title</span>
+                         <span class="product-price">Rs 699</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="catalog__container-view col s12 m12 l12 center-hr">
+                <a href="#" class="nr-btn">VIEW ALL</a>
+            </div>
+         </div>
+         
+     </div>
+    <!--Product category slider end-->
 
  <!-- Product Catalog-->
  <div class="heading center-hr">
@@ -242,78 +526,78 @@
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/1.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title price">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/2.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/3.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/1.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/2.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
          <div class="col s6 m4 l3">
              <div class="card">
                  <div class="card-image">
-                     <img src="/assets/4m6a3723nrpt-410-burgundy.jpg">
+                     <img src="assets/product/3.jpeg">
                      <a class="card-eye"><i
                              class="material-icons">remove_red_eye</i></a>
                  </div>
                  <div class="card-content">
-                     <span class="card-title">Product Title</span>
-                     <span class="card-title">Rs 699</span>
+                     <span class="product-title">Product Title</span>
+                     <span class="product-price">Rs 699</span>
                  </div>
              </div>
          </div>
@@ -327,6 +611,38 @@
 
  <!-- End of Product Catalog-->
 
+ <!--Brand review-->
+ <div class="reviews">
+     <h5 class="center-align">See What People Say About Us:</h5>
+    <div class="owl-carousel owl-theme reviews-slider nr-slider">
+        <div class="item">
+            <div class="reviews-stars" style="--rating: 4.3;" aria-label="Rating"></div>
+            <p><b>Great Quality</b></p>
+            <p>Great quality and affordable price</p>
+            <span class="small">Pranav Lari</span>
+        </div>
+        <div class="item">
+            <div class="reviews-stars" style="--rating: 4.5;" aria-label="Rating"></div>
+            <p><b>Great Shopping expirence</b></p>
+            <p>On time delivery and good quality product</p>
+            <span class="small">Supi Mon</span>
+        </div>
+        <div class="item">
+            <div class="reviews-stars" style="--rating: 4;" aria-label="Rating"></div>
+            <p><b>Great Quality</b></p>
+            <p>Great quality and affordable price</p>
+            <span class="small">Prabhath</span>
+        </div>
+        <div class="item">
+            <div class="reviews-stars" style="--rating: 5;" aria-label="Rating"></div>
+            <p><b>Great Quality</b></p>
+            <p>Great quality and affordable price</p>
+            <span class="small">Jeswin</span>
+        </div>
+    </div>
+ </div>
+
+ <!-- End od brand reviews -->
     <!--Footer-->
     <footer class="footer">
         <div class="footer-guarantee row">
@@ -411,16 +727,27 @@
                         </ul>
                     </div>
                   </li>
+                  <li class="footer-newsletter">
+                    <div class="collapsible-header"><h6 class="white-heading">NEWSLETTES</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <p><b>Sign up to our newsletter and recieve latest updates on new product launches and offers.</b></p>
+                        <div class="footer-newsletter_btn">
+                            <input type="email" placeholder="Enter Email ID" name="newsletter" id="newsletter">
+                            <button class="nr-btn">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                  </li>
               </ul>
         </div>
         <div class="footer-payments">
-            <div class="footer-container row">
-                <img src="assets/icons/visa.svg" width="70px" height="50px" alt="visa" class="col s2">
-                <img src="assets/icons/master.svg" width="70px" height="50px" alt="master-card" class="col s2">
-                <img src="assets/icons/rupay.svg" width="70px" height="50px" alt="rupay" class="col s2">
-                <img src="assets/icons/google-pay.svg" width="70px" height="50px" alt="google-pay" class="col s2">
-                <img src="assets/icons/phonepe.svg" width="70px" height="50px" alt="phone-pe" class="col s2">
-                <img src="assets/icons/bhim.svg" width="70px" height="50px" alt="bhim" class="col s2">
+            <div class="footer-container">
+                <img src="assets/icons/visa.svg" width="70px" height="50px" alt="visa">
+                <img src="assets/icons/master.svg" width="70px" height="50px" alt="master-card">
+                <img src="assets/icons/rupay.svg" width="70px" height="50px" alt="rupay">
+                <img src="assets/icons/google-pay.svg" width="70px" height="50px" alt="google-pay">
+                <img src="assets/icons/phonepe.svg" width="70px" height="50px" alt="phone-pe">
+                <img src="assets/icons/bhim.svg" width="70px" height="50px" alt="bhim">
 
             </div>
         </div>

@@ -1,0 +1,108 @@
+.filter {
+    &-filter {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+        background-color: hsl(9deg 67% 54%);
+        color: #fff;
+        padding: 8px;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    }
+
+    .collapsible {
+        li.active {
+            i {
+                transform: rotate(-180deg);
+            }
+        }
+
+        li i {
+            position: absolute;
+            right: 0;
+        }
+
+        p {
+            line-height: 30px;
+        }
+    }
+
+    .collapsible-header {
+        font-family: 'Poppins';
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    [type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+        padding-left: 22px;
+        font-size: .85rem;
+    }
+
+    [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+        background-color: hsl(221deg 54% 25%);
+    }
+
+    
+    &-cont {
+        padding: 0 25px!important;
+    } 
+
+    .applied {
+        margin: 15.5px;
+        position: relative;
+        border: 2px solid hsl(221deg 54% 25%);
+
+        span {
+            position: absolute;
+            top: -10px;
+            background-color: #fff;
+            line-height: 20px;
+            left: 10px;
+            font-weight: bold;
+        }
+
+        &-container {
+            padding: 8px;
+        }
+
+        .chip {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Poppins',sans-serif;
+            padding: 0 5px;
+            color: rgba(0,0,0,.7);
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .main-container {
+        display: flex;
+        .filter {
+            transform: translateX(0%)!important;
+            position: sticky;
+            top: 95px!important;
+            height: 100vh;
+            z-index: 996;
+            box-shadow: none;
+
+            &-filter {
+                display: none;
+            }
+        }
+
+        .product-cont {
+            width: calc(100vw - 320px);
+            margin-left: auto;
+        }
+    }
+
+}

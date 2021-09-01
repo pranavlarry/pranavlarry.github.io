@@ -9,6 +9,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 "use strict";
 
+var animateObjs = {
+  // fadeUpText:  document.querySelectorAll(".fade-up-text"),
+  // fadeUpImage:  document.querySelectorAll(".fade-up-image"),
+  fadeScaleInBanner: document.querySelectorAll(".fade-scaleIn-banner") // fadeScaleInImage:  document.querySelectorAll(".fade-scaleIn-image"),
+  // fadeScaleInbg: document.querySelectorAll(".fade-scale-inbg"),
+  // riseUpText:  document.querySelectorAll(".rise-up-text"),
+  // riseUpImage:  document.querySelectorAll(".rise-up-image"),
+  // listCarousel: document.querySelectorAll(".list-carousel .result__link"),
+  // list: document.querySelectorAll(".row-list-two .result__item-img")
+
+};
+
+var callback = function callback(entires, observer) {
+  entires.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+var options = {
+  root: null,
+  threshold: 0.5
+};
+var observer = new IntersectionObserver(callback, options);
+
+for (var items in animateObjs) {
+  animateObjs[items].forEach(function (e) {
+    observer.observe(e);
+  });
+}
+"use strict";
+
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, {});
@@ -128,22 +162,74 @@ $('.slide').owlCarousel({
 
 var options = {};
 document.addEventListener('DOMContentLoaded', function () {
-  var sidenav = document.querySelectorAll('.sidenav');
+  var sidenav = document.querySelectorAll('.sidenav.menu');
   var instances = M.Sidenav.init(sidenav, options);
+  options['edge'] = 'right';
+  console.log(options);
+  var sidenavCart = document.querySelectorAll('.sidenav.cart');
+  instances = M.Sidenav.init(sidenavCart, options);
 });
 var navtabs = document.querySelectorAll('.tabs');
-var instance = M.Tabs.init(navtabs, options);
+var instance = M.Tabs.init(navtabs, options); //mega dropdown
+
+$(".mega-trigger").click(function (e) {
+  var id = $(e.target).data("target");
+  var $traget = $(id);
+
+  if (!$traget.hasClass("active")) {
+    $(".mega.active").slideUp();
+    $(".mega").removeClass("active");
+    $traget.addClass("active");
+    $traget.slideDown();
+  } else {
+    $traget.slideUp();
+    $traget.removeClass("active");
+  }
+}); //  $(".mega-trigger").on("mouseenter",(e)=>{
+//     let id = $(e.target).data("target");
+//     let $traget = $(id);
+//     if(!$traget.hasClass("active")) {
+//         $(".mega").slideUp();
+//         $(".mega").removeClass("active");
+//         $traget.slideDown();
+//         $traget.addClass("active");
+//     }
+//  });
+//  $(document).mouseup(function(e) 
+//  {
+//      var container = $(".mega-trigger");
+//      // if the target of the click isn't the container nor a descendant of the container
+//      if (!container.is(e.target) && container.has(e.target).length === 0) 
+//      {
+//          $(".mega.active").slideUp();
+//      }
+//  });
 "use strict";
 
-$('.product-catalog_carousel').owlCarousel({
+var $products = $('.product-catalog_carousel').owlCarousel({
   loop: false,
   margin: 10,
   nav: false,
+  autoplayTimeout: 500,
+  autoplayHoverPause: false,
   responsive: {
     0: {
       items: 1
     }
   }
+});
+$("input[name='grid']").on("change", function () {
+  $(".product-cont").toggleClass("m-50");
+  $products.trigger('refresh.owl.carousel');
+});
+$(".product-catalog_carttrigger").click(function (e) {
+  $(e.target).addClass("active");
+  $(e.target).next(".product-catalog_cart").addClass("active");
+});
+$(".product-catalog_close").click(function (e) {
+  var $parent = $(e.target).closest(".product-catalog_cart");
+  $parent.prev(".product-catalog_carttrigger").removeClass("active");
+  $parent.removeClass("active");
 });
 "use strict";
 
@@ -232,7 +318,8 @@ $('.product-related').owlCarousel({
       items: 3
     },
     1000: {
-      items: 5
+      items: 5,
+      nav: true
     }
   }
 });
@@ -278,4 +365,24 @@ $(document).ready(function () {
     max = "Rs. " + $rangeTwo.val();
     $priceRange.text(min + " - " + max);
   });
+});
+"use strict";
+
+$('.reviews-slider').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
+  }
 });
