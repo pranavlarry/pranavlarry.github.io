@@ -1454,3 +1454,19 @@ body [type="checkbox"] + span:not(.lever) {
   background-color: hsl(9, 67%, 54%);
   height: 3px;
 }
+
+.footer-newsletter .collapsible-body p{
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-newsletter {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-newsletter .collapsible-body p{
+    font-size: 15px;
+  }
+}
+
