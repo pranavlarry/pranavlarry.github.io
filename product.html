@@ -81,11 +81,36 @@
                     <img src="assets/product/3.jpeg" alt="catagory" class="product-img">
                 </a>
             </div>
+            <!--Product desc-->
+            <div class="product-description hide-on-med-and-down">
+                <h5>Product Details</h5>
+                <p><b>Product Description:</b></p>
+                <ul>
+                    <li>Printed Shirt</li>
+                    <li>100% Cotton</li>
+                    <li>Slim fit</li>
+                </ul>
+                <p><b>Size Description:</b></p>
+                <ul>
+                    <li>M is (90-95 cm)</li>
+                    <li>L is (95-100 cm)</li>
+                    <li>XL is (100-105 cm)</li>
+                </ul>
+                <p><b>Care instruction:</b></p>
+                <ul>
+                    <li>Regular wash with cold water. Dry in shade.</li>
+                </ul>
+                <p><b>Product colour may slightly vary due to photographic effect.</b></p>
+            </div>
+            <!--End of Product desc-->
         </div>
         <div class="product-details col s12 m12 l4 center-align">
             <div>
-                <h4 class="product-maintitle">Product Title</h4>
-                <h5 class="product-mainprice">Rs 699</h5>
+                <div class="product-details_container">
+                    <h4 class="product-maintitle">Product Title</h4>
+                    <h5 class="product-mainprice">Rs 699</h5>
+                    <p class="small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                </div>
                 <div class="product-options">
                     <div class="product-sizecont">
                         <span class="d-block">SIZES: </span>
@@ -121,13 +146,18 @@
                     <a class="waves-effect waves-light btn cart">ADD TO CART</a>
                     <a class="waves-effect waves-light btn buy">BUY NOW</a>
                 </div>
-                <!-- <span class="d-block">Delivery Check:</span>
                 <div class="product-delivery">
-                    <input type="text" class="product-pincode" name="postcode" id="postcode" placeholder="Enter Delivery Pincode">
-                    <button class="nr-btn">Check</button>
-                    <span>Please enter PIN code to check delivery and COD availability</span>
-                </div> -->
-                <!-- <div class="product-discount">
+                    <span class="d-block">Delivery Check:</span>
+                    <div class="product-delivery_input">
+                        <input type="text" class="product-pincode" name="postcode" id="postcode" placeholder="Enter Delivery Pincode">
+                        <button class="nr-btn">Check</button>
+                        <span>Please enter PIN code to check delivery and COD availability</span>
+                    </div>
+                </div>
+
+                        
+
+                <div class="product-discount">
                     <h5>Discounts:</h5>
                     <ul>
                         <li>
@@ -139,7 +169,7 @@
                             <p><b>Use code: COMBO</b></p>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
             
 
@@ -150,28 +180,44 @@
 
     <!--End of Product Slider and details-->
 
-    <!--Product desc-->
-    <div class="product-description">
-        <h5>Product Details</h5>
-        <p><b>Product Description:</b></p>
-        <ul>
-            <li>Printed Shirt</li>
-            <li>100% Cotton</li>
-            <li>Slim fit</li>
-        </ul>
-        <p><b>Size Description:</b></p>
-        <ul>
-            <li>M is (90-95 cm)</li>
-            <li>L is (95-100 cm)</li>
-            <li>XL is (100-105 cm)</li>
-        </ul>
-        <p><b>Care instruction:</b></p>
-        <ul>
-            <li>Regular wash with cold water. Dry in shade.</li>
-        </ul>
-        <p><b>Product colour may slightly vary due to photographic effect.</b></p>
-    </div>
-    <!--End of Product desc-->
+    <ul class="collapsible product-details_mob hide-on-large-only">
+        <li>
+          <div class="collapsible-header">Product Description
+            <i class="small material-icons">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <ul>
+                <li>Printed Shirt</li>
+                <li>100% Cotton</li>
+                <li>Slim fit</li>
+                <li><b>Product colour may slightly vary due to photographic effect.</b></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">Size Description
+            <i class="small material-icons">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <ul>
+                <li>M is (90-95 cm)</li>
+                <li>L is (95-100 cm)</li>
+                <li>XL is (100-105 cm)</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">Care instruction
+            <i class="small material-icons">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <ul>
+                <li>Regular wash with cold water. Dry in shade.</li>
+            </ul>
+          </div>
+        </li>
+    </ul>
+            
 
     <!--Related Products-->
     <div class="heading center-hr">
@@ -305,7 +351,7 @@
                     <div class="collapsible-header"><h6 class="white-heading">NEWSLETTES</h6>
                         <i class="small material-icons">arrow_drop_down</i></div>
                     <div class="collapsible-body">
-                        <p><b>Sign up to our newsletter and recieve latest updates on new product launches and offers.</b></p>
+                        <p>Sign up to our newsletter and recieve latest updates on new product launches and offers.</p>
                         <div class="footer-newsletter_btn">
                             <input type="email" placeholder="Enter Email ID" name="newsletter" id="newsletter">
                             <button class="nr-btn">SUBSCRIBE</button>
