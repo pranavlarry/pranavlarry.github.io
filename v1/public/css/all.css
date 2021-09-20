@@ -1140,6 +1140,7 @@ body [type="checkbox"] + span:not(.lever) {
   left: 0;
   right: 0;
   display: none;
+      min-width: 120%;
 }
 .mega-menu {
   margin: 30px 15px 15px 15px;
