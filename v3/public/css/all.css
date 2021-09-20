@@ -832,7 +832,7 @@ body [type="checkbox"] + span:not(.lever) {
     display: none;
   }
   .main-container .product-cont {
-    width: calc(100vw - 320px);
+    width: calc(100vw + 45px);
     margin-left: auto;
   }
 }
