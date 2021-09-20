@@ -835,6 +835,13 @@ body [type="checkbox"] + span:not(.lever) {
     width: calc(100vw + 45px);
     margin-left: auto;
   }
+  
+  @-moz-document url-prefix() {
+   .main-container .product-cont {
+      width: calc(100vw - 320px)!important;
+      margin-left: auto;
+    }
+  }
 }
 
 .flash {
