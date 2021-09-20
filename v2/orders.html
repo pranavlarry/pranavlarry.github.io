@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="public/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5e6f1a3b7.js" crossorigin="anonymous"></script>
+    <title>NR Orders & Returns</title>
+</head>
+<body>
+       <!--Header start-->
+    <nav class="navbar-fixed nav" style="position: fixed">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo nav-logo">
+              <h4>NORTH REPUBLIC</h4>
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right">
+            <li>
+                <div class="search">
+                    <input type="text" class="search-bar" placeholder="Search">
+                    <button class="search-btn"><i class="material-icons">search</i></button>
+                </div>
+            </li>
+            <li class="hide-on-med-and-down"><a href="#"><i class="material-icons">account_circle</i></a></li>
+            <li>
+                  <a href="#" data-target="slide-out-cart" style="display: block;" class="cart-trigger sidenav-trigger"><i class="material-icons">shopping_cart</i></a>
+            </li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down menu">
+            <li>
+                <a href="#!" class="mega-trigger" data-target="#top_wear">
+                    TOP WEAR<i class="material-icons right">arrow_drop_down</i>
+                    <div class="mega" id="top_wear">
+                        <div class="mega-menu">
+                            <h4>TOP WEAR</h4>
+                            <ul  class="mega-items">
+                                <li>
+                                    <p class="mega-maincat"><a href="#"><b>Shirts</b></a></p>
+                                    <ul class="mega-subcat">
+                                        <li><a href="#">Solids</a></li>
+                                        <li><a href="#">CHECKERED</a></li>
+                                        <li><a href="#">FLORAL</a></li>
+                                        <li><a href="#">MODERN</a></li>
+                                        <li><a href="#">STRIPES</a></li>
+                                        <li><a href="#">999 Collections</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>T-Shirts</b></a></p>
+                                    <ul  class="mega-subcat">
+                                        <li><a href="#">Graphic Tees</a></li>
+                                        <li><a href="#">Combo Packs</a></li>
+                                        <li><a href="#">Polos @ 399</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="mega-related">
+                                <p class="mega-related-heading"><b>You May Also Like:</b></p>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="mega-trigger" href="#!" data-target="#bottom_wear">
+                    BOTTOM WEAR<i class="material-icons right">arrow_drop_down</i>
+                    <div class="mega" id="bottom_wear">
+                        <div class="mega-menu">
+                            <h4>BOTTOM WEAR</h4>
+                            <ul  class="mega-items">
+                                <li>
+                                    <p class="mega-maincat"><a href="#"><b>TROUSERS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>JEANS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>SHORTS</b></a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#"><b>BOXERS</b></a></p>
+                                </li>
+                            </ul>
+                            <div class="mega-related">
+                                <p class="mega-related-heading"><b>You May Also Like:</b></p>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                                <a href="#">
+                                    <img class="mega-related-img" src="../assets/Operator-Lifestyle--nav-v1626880468352.webp" alt="" srcset="">
+                                    <h6>New Arrivals</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li><a href="badges.html">ORDERS & RETURNS</a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- Side navbars -->
+    <div id="slide-out-cart" class="sidenav cart">
+        <div>
+            <h4 class="center-align">Your Cart</h4>
+            <ul class="cart-items">
+                <li class="cart-item">
+                    <div class="cart-img">
+                        <img src="../assets/product/1.jpeg" alt="Product" width="65px">
+                    </div>
+                    <div>
+                        <p>Product Title</p>
+                        <p class="small">Size: XL</p>
+                        <div class="product-qty">
+                            <button class="product-qtychange product-qtyminus">-</button>
+                            <input class="product-qtyno" type="number" name="qty" id="qty" value="1" min="1" max="10">
+                            <button class="product-qtychange product-qtyplus">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Rs. 1000</p>
+                        <p class="cart-del small center-align"><i class="material-icons small">delete</i></p>
+                    </div>
+                </li>
+                <li class="cart-item">
+                    <div class="cart-img">
+                        <img src="../assets/product/2.jpeg" alt="Product" width="65px">
+                    </div>
+                    <div>
+                        <p>Product Title</p>
+                        <p class="small">Size: XL</p>
+                        <div class="product-qty">
+                            <button class="product-qtychange product-qtyminus">-</button>
+                            <input class="product-qtyno" type="number" name="qty" id="qty" value="1" min="1" max="10">
+                            <button class="product-qtychange product-qtyplus">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Rs. 1000</p>
+                        <p class="cart-del small center-align"><i class="material-icons small">delete</i></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="cart-checkout">
+            <div class="cart-total"><span>Total: </span><span>Rs 2000</span></div>
+            <button class="nr-btn">Checkout</button>
+        </div>
+    </div>
+    <ul class="sidenav menu" id="mobile-demo">
+        <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-custom">
+                <li class="tab col s3"><a class="active" href="#menu">Menu</a></li>
+                <li class="tab col s3"><a href="#account">Account</a></li>
+              </ul>
+            </div>
+            <div id="menu" class="col s12">
+                <ul class="collapsible">
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">SALES
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#">Flat 40% Discount</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">TOVINO COLLECTION
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Illusion Shirts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="collapsible-item">
+                      <div class="collapsible-header">TOP WEAR
+                        <i class="small material-icons">arrow_drop_down</i>
+                      </div>
+                      <div class="collapsible-body">
+                        <ul class="collapsible">
+                            <li class="collapsible-item">
+                                <div class="collapsible-header">Shirts
+                                    <i class="small material-icons">arrow_drop_down</i>
+                                  </div>
+                                  <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="#">SOLIDS</a></li>
+                                            <li><a href="#">CHECKERED</a></li>
+                                            <li><a href="#">FLORAL</a></li>
+                                            <li><a href="#">MODERN</a></li>
+                                            <li><a href="#">STRIPES</a></li>
+                                            <li><a href="#">999 COLLECTION</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li class="collapsible-item">
+                                <div class="collapsible-header">T-Shirts
+                                    <i class="small material-icons">arrow_drop_down</i>
+                                  </div>
+                                  <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="#">GRAPHIC TEES</a></li>
+                                            <li><a href="#">COMBO PACKS</a></li>
+                                            <li><a href="#">POLOS @ 399</a></li>
+                                            <li><a href="#">POLOS</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="collapsible-item">
+                        <div class="collapsible-header">BOTTOM WEAR
+                            <i class="small material-icons">arrow_drop_down</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">TROUSERS</a></li>
+                                <li><a href="#">JEANS</a></li>
+                                <li><a href="#">SHORTS</a></li>
+                                <li><a href="#">BOXERS</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
+            </div>
+            <div id="account" class="col s12">
+                <li><a href="#">Sign In</a></li>
+            </div>
+        </div>
+    </ul>
+    <div class="filler"></div>
+    <!--Header end-->
+
+    <h1 class="center-align">Orders & Returns</h1>
+
+    <div class="details">
+        <div>
+            <div>
+              <ul class="tabs tabs-custom orders-tab">
+                <li class="tab col s3"><a class="active" href="#orders">Orders</a></li>
+                <li class="tab col s3"><a href="#returns">Returns</a></li>
+              </ul>
+            </div>
+            <div id="orders" class="orders">
+                <ul>
+                    <li>
+                        <div class="orders-container">
+                            <div>
+                                <div class="orders-top">
+                                    <div class="orders-detail-cont hide-on-med-and-down">
+                                        <div>
+                                            <p class="orders-info">ORDER PLACED</p>
+                                            <p class="orders-info-val">Oct 27, 2021</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">TOTAL</p>
+                                            <p class="orders-info-val">Rs. 999</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">SHIP TO</p>
+                                            <p class="orders-info-val">John Doe, Stresemannstr.70, Saarlouis, Germany</p>
+                                        </div>
+                                    </div>
+                                    <div class="orders-id">
+                                        <p>ORDER # 112-1803-58</p>
+                                        <a href="#"><b>Order Details</b></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="orders-middle">
+                                    <div class="orders-cont">
+                                        <img src="../assets/product/1.jpeg" class="orders-img"  alt="Product">
+                                        <div>
+                                            <p class="orders-title"><b>Newspaper Print White Shirt</b></p>
+                                            <span>
+                                                <div class="chip">
+                                                    <b>Status: On the way</b>
+                                                </div>
+                                            </span>
+                                            <div class="orders-details">
+                                                <span>Size: XL</span>
+                                                <span>Qantity: 1</span>
+                                            </div>
+                                            <div class="orders-product-details hide-on-med-and-down">
+                                                <p>Product Details:</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus nibh quis turpis mollis ultricies. Maecenas convallis sapien imperdiet, varius ante in, viverra lectus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orders-options">
+                                        <button>VIEW PRODUCT</button>
+                                        <button>CANCEL ORDER</button>
+                                    </div>
+                                </div>
+                                <div class="orders-bottom">
+                                    <p>ESTIMATED DELIVERY: <span><b>Nov 5, 2021</b></span></p>
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-container">
+                            <!-- <div class="chip">
+                                <b>Status: Picked Up</b>
+                            </div>
+                            <div class="orders-product">
+                                <div class="orders-product_details">
+                                    <img src="../assets/product/1.jpeg"  alt="Product">
+                                    <div>
+                                        <h6>Poduct Title</h6>
+                                        <p class="small">Order id: 2345678</p>
+                                        <p class="small">Size: XL</p>
+                                        <p class="small">Qty: 1</p>
+                                        <p class="small">Ordered Date: 02/09/2021</p>
+                                    </div>
+                                </div>
+                                <div class="orders-options">
+                                    <button class="nr-btn orders-option">Order details</button>
+                                    <button class="nr-btn orders-option">Cancel Order</button>
+                                    <button class="nr-btn orders-option">Exchange Order</button>
+                                    <button class="nr-btn orders-option">View Product</button>
+                                </div>
+                            </div> -->
+                            <div>
+                                <div class="orders-top">
+                                    <div class="orders-detail-cont hide-on-med-and-down">
+                                        <div>
+                                            <p class="orders-info">ORDER PLACED</p>
+                                            <p class="orders-info-val">Oct 27, 2021</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">TOTAL</p>
+                                            <p class="orders-info-val">Rs. 999</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">SHIP TO</p>
+                                            <p class="orders-info-val">John Doe, Stresemannstr.70, Saarlouis, Germany</p>
+                                        </div>
+                                    </div>
+                                    <div class="orders-id">
+                                        <p>ORDER # 112-1803-58</p>
+                                        <a href="#"><b>Order Details</b></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="orders-middle">
+                                    <div class="orders-cont">
+                                        <img src="../assets/product/1.jpeg" class="orders-img"  alt="Product">
+                                        <div>
+                                            <p class="orders-title"><b>Newspaper Print White Shirt</b></p>
+                                            <span>
+                                                <div class="chip green">
+                                                    <b>Status: Delivered</b>
+                                                </div>
+                                            </span>
+                                            <div class="orders-details">
+                                                <span>Size: XL</span>
+                                                <span>Qantity: 1</span>
+                                            </div>
+                                            <div class="orders-product-details hide-on-med-and-down">
+                                                <p>Product Details:</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus nibh quis turpis mollis ultricies. Maecenas convallis sapien imperdiet, varius ante in, viverra lectus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orders-options">
+                                        <button>VIEW PRODUCT</button>
+                                        <button>RETURN PRODUCT</button>
+                                    </div>
+                                </div>
+                                <div class="orders-bottom">
+                                    <p>DELIVERED ON: <span><b>Jan 5, 2021</b></span></p>
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-container">
+                            <!-- <div class="chip">
+                                <b>Status: Picked Up</b>
+                            </div>
+                            <div class="orders-product">
+                                <div class="orders-product_details">
+                                    <img src="../assets/product/1.jpeg"  alt="Product">
+                                    <div>
+                                        <h6>Poduct Title</h6>
+                                        <p class="small">Order id: 2345678</p>
+                                        <p class="small">Size: XL</p>
+                                        <p class="small">Qty: 1</p>
+                                        <p class="small">Ordered Date: 02/09/2021</p>
+                                    </div>
+                                </div>
+                                <div class="orders-options">
+                                    <button class="nr-btn orders-option">Order details</button>
+                                    <button class="nr-btn orders-option">Cancel Order</button>
+                                    <button class="nr-btn orders-option">Exchange Order</button>
+                                    <button class="nr-btn orders-option">View Product</button>
+                                </div>
+                            </div> -->
+                            <div>
+                                <div class="orders-top">
+                                    <div class="orders-detail-cont hide-on-med-and-down">
+                                        <div>
+                                            <p class="orders-info">ORDER PLACED</p>
+                                            <p class="orders-info-val">Oct 27, 2021</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">TOTAL</p>
+                                            <p class="orders-info-val">Rs. 999</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">SHIP TO</p>
+                                            <p class="orders-info-val">John Doe, Stresemannstr.70, Saarlouis, Germany</p>
+                                        </div>
+                                    </div>
+                                    <div class="orders-id">
+                                        <p>ORDER # 112-1803-58</p>
+                                        <a href="#"><b>Order Details</b></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="orders-middle">
+                                    <div class="orders-cont">
+                                        <img src="../assets/product/1.jpeg" class="orders-img"  alt="Product">
+                                        <div>
+                                            <p class="orders-title"><b>Newspaper Print White Shirt</b></p>
+                                            <span>
+                                                <div class="chip">
+                                                    <b>Status: Picked Up</b>
+                                                </div>
+                                            </span>
+                                            <div class="orders-details">
+                                                <span>Size: XL</span>
+                                                <span>Qantity: 1</span>
+                                            </div>
+                                            <div class="orders-product-details hide-on-med-and-down">
+                                                <p>Product Details:</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus nibh quis turpis mollis ultricies. Maecenas convallis sapien imperdiet, varius ante in, viverra lectus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orders-options">
+                                        <button>VIEW PRODUCT</button>
+                                        <button>CANCEL ORDER</button>
+                                    </div>
+                                </div>
+                                <div class="orders-bottom">
+                                    <p>ESTIMATED DELIVERY: <span><b>Nov 5, 2021</b></span></p>
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="returns" class="returns">
+                <ul>
+                    <li>
+                        <div class="orders-container">
+                            <div>
+                                <div class="orders-top">
+                                    <div class="orders-detail-cont hide-on-med-and-down">
+                                        <div>
+                                            <p class="orders-info">ORDER PLACED</p>
+                                            <p class="orders-info-val">Oct 27, 2021</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">TOTAL</p>
+                                            <p class="orders-info-val">Rs. 999</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">PICK UP ADDRESS</p>
+                                            <p class="orders-info-val">John Doe, Stresemannstr.70, Saarlouis, Germany</p>
+                                        </div>
+                                    </div>
+                                    <div class="orders-id">
+                                        <p>ORDER # 112-1803-58</p>
+                                        <a href="#"><b>Returns Details</b></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="orders-middle">
+                                    <div class="orders-cont">
+                                        <img src="../assets/product/1.jpeg" class="orders-img"  alt="Product">
+                                        <div>
+                                            <p class="orders-title"><b>Newspaper Print White Shirt</b></p>
+                                            <span>
+                                                <div class="chip">
+                                                    <b>Status: Return Picked Up</b>
+                                                </div>
+                                            </span>
+                                            <div class="orders-details">
+                                                <span>Size: XL</span>
+                                                <span>Qantity: 1</span>
+                                            </div>
+                                            <div class="orders-product-details hide-on-med-and-down">
+                                                <p>Product Details:</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus nibh quis turpis mollis ultricies. Maecenas convallis sapien imperdiet, varius ante in, viverra lectus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orders-options">
+                                        <button>VIEW PRODUCT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-container">
+                            <div>
+                                <div class="orders-top">
+                                    <div class="orders-detail-cont hide-on-med-and-down">
+                                        <div>
+                                            <p class="orders-info">ORDER PLACED</p>
+                                            <p class="orders-info-val">Oct 27, 2021</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">TOTAL</p>
+                                            <p class="orders-info-val">Rs. 999</p>
+                                        </div>
+                                        <div>
+                                            <p class="orders-info">PICK UP ADDRESS</p>
+                                            <p class="orders-info-val">John Doe, Stresemannstr.70, Saarlouis, Germany</p>
+                                        </div>
+                                    </div>
+                                    <div class="orders-id">
+                                        <p>ORDER # 112-1803-58</p>
+                                        <a href="#"><b>Returns Details</b></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="orders-middle">
+                                    <div class="orders-cont">
+                                        <img src="../assets/product/1.jpeg" class="orders-img"  alt="Product">
+                                        <div>
+                                            <p class="orders-title"><b>Newspaper Print White Shirt</b></p>
+                                            <span>
+                                                <div class="chip green">
+                                                    <b>Status: Refunded</b>
+                                                </div>
+                                            </span>
+                                            <div class="orders-details">
+                                                <span>Size: XL</span>
+                                                <span>Qantity: 1</span>
+                                            </div>
+                                            <div class="orders-product-details hide-on-med-and-down">
+                                                <p>Product Details:</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus nibh quis turpis mollis ultricies. Maecenas convallis sapien imperdiet, varius ante in, viverra lectus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orders-options">
+                                        <button>VIEW PRODUCT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="details-policy col l6 s12">
+            <ul>
+                <li>
+                    <h5>Returns Policies</h5>
+                    <p>
+                        <ul class="details-policies">
+                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            <li>It has roots in a piece of classical Latin literature from 45 BC </li>
+                            <li>making it over 2000 years old. Richard McClintock, a Latin professor </li>
+                            <li>at Hampden-Sydney College in Virginia, looked up one of the more obscure </li>
+                            <li>Latin words, consectetur, from a Lorem Ipsum passage, and going through</li>
+                            <li>the cites of the word in classical literature, discovered the undoubtable source.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h5>Exchange Policies</h5>
+                    <p>
+                        <ul class="details-policies">
+                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            <li>It has roots in a piece of classical Latin literature from 45 BC </li>
+                            <li>making it over 2000 years old. Richard McClintock, a Latin professor </li>
+                            <li>at Hampden-Sydney College in Virginia, looked up one of the more obscure </li>
+                            <li>Latin words, consectetur, from a Lorem Ipsum passage, and going through</li>
+                            <li>the cites of the word in classical literature, discovered the undoubtable source.</li>
+                        </ul> 
+                    </p>
+                </li>
+                <li>
+                    <h5>Cancellation Policies</h5>
+                    <p>
+                        <ul class="details-policies">
+                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            <li>It has roots in a piece of classical Latin literature from 45 BC </li>
+                            <li>making it over 2000 years old. Richard McClintock, a Latin professor </li>
+                            <li>at Hampden-Sydney College in Virginia, looked up one of the more obscure </li>
+                            <li>Latin words, consectetur, from a Lorem Ipsum passage, and going through</li>
+                            <li>the cites of the word in classical literature, discovered the undoubtable source.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h5>Refund Policies</h5>
+                    <p>
+                        <ul class="details-policies">
+                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            <li>It has roots in a piece of classical Latin literature from 45 BC </li>
+                            <li>making it over 2000 years old. Richard McClintock, a Latin professor </li>
+                            <li>at Hampden-Sydney College in Virginia, looked up one of the more obscure </li>
+                            <li>Latin words, consectetur, from a Lorem Ipsum passage, and going through</li>
+                            <li>the cites of the word in classical literature, discovered the undoubtable source.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+            
+        </div> -->
+    </div>
+     <!--Footer-->
+     <footer class="footer">
+        <div class="footer-guarantee row">
+            <div class="col s12 m6 l3 center-align">
+                <i class="fas fa-truck"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SHIPPING & RETURN</h4>
+                    <p>ALL ORDER ABOVE INR 300</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="fas fa-undo"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>RETURNS</h4>
+                    <p>FOR NON MASKED PRODUCTS</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="fas fa-shield-alt"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SECURE PAYMENT</h4>
+                    <p>ALL MAJOR PAYMENT METHODS ACCPETED</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 center-align">
+                <i class="fas fa-headset"></i>
+                <div class="footer-guarantee-desc">
+                    <h6>SUPPORT</h4>
+                    <p>CALL US: 1800 2100 1001<br>
+                        24 x 7</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul class="collapsible">
+                <!-- <li>
+                  <div class="collapsible-header"><h6 class="white-heading">NORTH REPUBLIC</h6>
+                    <i class="small material-icons">arrow_drop_down</i></div>
+                  <div class="collapsible-body">
+                      <ul>
+                          <li><a href="#">About Us</a></li>
+                      </ul>
+                  </div>
+                </li> -->
+                <li class="footer-menu-brand center-align">
+                    <h3>NORTH REPUBLIC</h3>
+                    <p>COPYRIGHT @ NORTH REPUBLIC 2021 <br>
+                        ALL RIGHTS RESERVED.</p>
+                </li>
+                <li>
+                  <div class="collapsible-header"><h6>SHOP</h6>
+                    <i class="small material-icons">arrow_drop_down</i></div>
+                  <div class="collapsible-body">
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Denims</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Mask</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><h6>ACTIVITY</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Find Stores</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><h6>POLICIES</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cancellation</a></li>
+                            <li><a href="https://www.northrepublic.com/return-policy/">Return and Exchanges</a></li>
+                            <li><a href="https://www.northrepublic.com/refund-policy/">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="footer-newsletter">
+                    <div class="collapsible-header"><h6>NEWSLETTES</h6>
+                        <i class="small material-icons">arrow_drop_down</i></div>
+                    <div class="collapsible-body">
+                        <p>Sign up to our newsletter and recieve latest updates on new product launches and offers.</p>
+                        <div class="footer-newsletter_btn">
+                            <input type="email" placeholder="Enter Email ID" name="newsletter" id="newsletter">
+                            <button><i class="fas fa-envelope-open-text"></i></button>
+                        </div>
+                        <div class="footer-social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+        <div class="footer-payments">
+            <div class="footer-container">
+                <img src="../assets/icons/visa.svg" width="70px" height="50px" alt="visa">
+                <img src="../assets/icons/master.svg" width="70px" height="50px" alt="master-card">
+                <img src="../assets/icons/rupay.svg" width="70px" height="50px" alt="rupay">
+                <img src="../assets/icons/google-pay.svg" width="70px" height="50px" alt="google-pay">
+                <img src="../assets/icons/phonepe.svg" width="70px" height="50px" alt="phone-pe">
+                <img src="../assets/icons/bhim.svg" width="70px" height="50px" alt="bhim">
+
+            </div>
+        </div>
+        <!-- <div class="footer-copy center-align">
+            <p class="text-small">©Copyright 2020 - North Republic, All Rights Reserved.</p>
+        </div> -->
+    </footer>
+    <!--End of footer-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+      <script src="public/js/all.js"></script>     
+</body>
+</html>
