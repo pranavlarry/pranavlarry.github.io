@@ -1,5 +1,5 @@
 "use strict";
-
+document.body.style.zoom = "80%";
 document.addEventListener('DOMContentLoaded', function () {
   var acc = document.querySelectorAll('.collapsible');
   var opt = {
