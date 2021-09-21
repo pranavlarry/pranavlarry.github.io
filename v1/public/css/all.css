@@ -268,7 +268,7 @@ body [type="checkbox"] + span:not(.lever) {
 @media (min-width: 768px) {
   .banner {
     //height: calc(100vh - 56px);
-    height: 110vh;
+    height: 113vh;
   }
   .banner-content {
     top: 50%;
